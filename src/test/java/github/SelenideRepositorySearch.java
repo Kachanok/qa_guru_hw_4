@@ -50,7 +50,7 @@ public class SelenideRepositorySearch {
 
         System.out.println("Тест пройден успешно.");
 
-        sleep(5000);
+        
 
 
     }
