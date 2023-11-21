@@ -16,12 +16,11 @@ public class GitHubSolutionsEnterpriseHover {
         Configuration.baseUrl = "https://github.com/"; // открыть главную страницу
         Configuration.pageLoadStrategy = "eager";
         Configuration.holdBrowserOpen = false;
-        Configuration.timeout = 5000; // default 4000
+       
     }
 
     @Test
-    void openEnterpriseUseHover(){
-        open("https://github.com/");
+    void openEnterpriseUseHoverTest(){
         $(byText("Solutions")).hover();
         $(byText("Enterprise")).click();
         $("#hero-section-brand-heading").shouldHave(text("The AI-powered"));
